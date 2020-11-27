@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>TIC-TAC-TOE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header id = "showcase">
+
+    <h1>TIC-TAC-TOE GAME</h1>
+    <p>The player who succeeds in placing three of their marks in
+        a horizontal, vertical, or diagonal row is the winner.
+    Play by clicking on each square.</p>
+    <p> <strong> Player 1: = X &emsp;&emsp;&emsp;  Player 2: = O </strong></p>
+
+    <div class="content">
+        <table class="table_overlay">
+            <tr>
+                <td id="square_one_text" class="text"></td>
+                <td id="square_two_text" class="text"></td>
+                <td id="square_three_text" class="text"></td>
+            </tr>
+            <tr>
+                <td id="square_four_text" class="text"></td>
+                <td id="square_five_text" class="text"></td>
+                <td id="square_six_text" class="text"></td>
+            </tr>
+            <tr>
+                <td id="square_seven_text" class="text"></td>
+                <td id="square_eight_text" class="text"></td>
+                <td id="square_nine_text" class="text"></td>
+            </tr>
+        </table>
+        <div class="board">
+            <table>
+                <tr>
+                    <td id="square_one"></td>
+
+                    <td id="square_two"></td>
+
+                    <td id="square_three"></td>
+                </tr>
+                <tr>
+                    <td id="square_four"></td>
+                    <td id="square_five"></td>
+                    <td id="square_six"></td>
+                </tr>
+                <tr>
+                    <td id="square_seven"></td>
+                    <td id="square_eight"></td>
+                    <td id="square_nine"></td>
+                </tr>
+            </table>
+        </div>
+
+
+    </div>
+
+    <div id="myModal" class="modal animated fadeIn">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Game Over</h2>
+            </div>
+            <div class="modal-body">
+                <p class="modal_text"></p>
+                <btn id="restartBtn">Restart</btn>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="code.js"></script>
+</header>
+
+</body>
+</html>
